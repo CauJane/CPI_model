@@ -16,7 +16,7 @@ a_list_ns = numeric()
 b_list_ns = numeric()
 ## kind_id: 1-wheat, 2-maize, 3-rice
 for(kind_id in 1:3){
-  data = read.xlsx("data_IRAI.xlsx",sheet = kind_id)
+  data = read.xlsx("data_annual_input.xlsx",sheet = kind_id)
   x_sam = (1:length(data[,1]))
   y_sam = round(sort(data[,2],decreasing = T)/max(data[,2]),digits = 6)
   sample_size = round(nrow(data)*0.7)

@@ -1,6 +1,6 @@
-# GREM_test
+# CREM_test
 datasets:
-data_IRAI.xlsx was used to model construction and sensitive analysis.
+data_annual_input.xlsx was used to model construction and sensitive analysis.
 data_adjust.xlsx was used to adjust the existed model.
 
 codes:

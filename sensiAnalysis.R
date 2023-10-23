@@ -14,8 +14,8 @@ a_list_rice = numeric()
 b_list_rice = numeric()
 a_list_ns = numeric()
 b_list_ns = numeric()
-## kind_id: 1-wheat, 2-maize, 3-rice
-for(kind_id in 1:3){
+## kind_id: 1-wheat, 2-maize, 3-rice, 4-non-staple crop
+for(kind_id in 1:4){
   data = read.xlsx("data_annual_input.xlsx",sheet = kind_id)
   x_sam = (1:length(data[,1]))
   y_sam = round(sort(data[,2],decreasing = T)/max(data[,2]),digits = 6)

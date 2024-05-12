@@ -23,7 +23,7 @@ pro_stapplesInProv = apply(data_adj[,4:6],1,FUN = function(x){
   temp_X = x*c(sum(fun_xm(1:n_xm)),sum(fun_ym(1:n_ym)),sum(fun_sd(1:n_sd)))
   round(temp_X/sum(temp_X),digits = 4)})
 colnames(pro_stapplesInProv) = data_adj[,1]
-T_sum = data_adj[1,12]
+T_sum = sum(data_adj[,3])
 
 ret_paraC = data.frame(province=character(),dA_ori=numeric(),dA=numeric(),c_min=numeric(),c_max=numeric(),c_optim=numeric(),a=numeric(),pro_dA=numeric())
 for(s in 1:length(pro_notStaple)){
@@ -38,7 +38,8 @@ for(s in 1:length(pro_notStaple)){
   dA_ori = A_staple_ori+A_notStaple_ori-B_s
   
   set_step = 0.01
-  c_min = -0.384835009
+  c_min = -c(fun_xm(n_xm),fun_ym(n_ym),fun_sd(n_sd))*sapply(pro_stapplesInProv[,s],function(x){ifelse(x==0,0,1/x)})
+  c_min = max(c_min[which(pro_stapplesInProv[,s]!=0)])
   c_max = (1-c(fun_xm(1),fun_ym(1),fun_sd(1)))*sapply(pro_stapplesInProv[,s],function(x){ifelse(x==0,0,1/x)})
   c_max = min(c_max[which(pro_stapplesInProv[,s]!=0)])
   tx = seq(c_min,c_max,by=set_step)

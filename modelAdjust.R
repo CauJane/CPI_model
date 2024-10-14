@@ -1,6 +1,7 @@
 rm(list=ls())
 library(openxlsx)
 library(Cairo)
+setwd("~/Desktop/CPI_model")
 
 #####Model adjusting
 data_adj = read.xlsx("data_adjust.xlsx",sheet = 1)

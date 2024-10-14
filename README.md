@@ -1,7 +1,7 @@
 # CREM_test
 datasets:
-data_annual_input.xlsx was used to model construction and sensitive analysis.
-data_adjust.xlsx was used to adjust the existed model.
+`data_annual_input.xlsx` was used to model construction and sensitive analysis.
+`data_adjust.xlsx` was used to adjust the existed model.
 
 codes:
 script parasEstimate.R demonstrates how to construct a model.

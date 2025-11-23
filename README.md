@@ -1,13 +1,13 @@
 # CPI_model
 <img width="904" height="1096" alt="图片" src="https://github.com/user-attachments/assets/83c4fb59-4218-46b0-a234-f04fec8b534c" />
 
-The original data is stored in the folder `./data/`:
-`1_pesticide_input_data_VMP_mode.xlsx` contains application rates of differ pesticides under the vehicle-mounted pump mode, compiled from farmer survey data.
-`2_pesticide_input_data_knapsack_mode.xlsx` contains application rates of differ pesticides under the knapsack mode, compiled from farmer survey data.
-`3_forbidden_pesticides.xlsx` contains application rates of differ forbidden pesticides.
-`4_pesticide_lists_for_temporal_trends_quantitation.xlsx` contains data on application rates, registration and forbidden years for all currently known pesticides.
+## The original data is stored in the folder `./data/`:
+* `1_pesticide_input_data_VMP_mode.xlsx` contains application rates of differ pesticides under the vehicle-mounted pump mode, compiled from farmer survey data.
+* `2_pesticide_input_data_knapsack_mode.xlsx` contains application rates of differ pesticides under the knapsack mode, compiled from farmer survey data.
+* `3_forbidden_pesticides.xlsx` contains application rates of differ forbidden pesticides.
+* `4_pesticide_lists_for_temporal_trends_quantitation.xlsx` contains data on application rates, registration and forbidden years for all currently known pesticides.
 
-R codes:
-`lmFitted.R` is divided into three parts. The first part fits the annual variation curves of application rates for per pesticide types (Insecticides, Fungicides or Herbicides) and per spraying patterns (vehicle-mounted pump or knapsack), based on the `1_pesticide_input_data_VMP_mode.xlsx` and `2_pesticide_input_data_knapsack_mode.xlsx` tables. The second part fits the trend of application rates for forbidden pesticides based on the `3_forbidden_pesticides.xlsx` table. The third part uses those fitted models constructed in the first two parts to estimate the application rates of all known pesticides from 2001 to 2022, based on the `4_pesticide_lists_for_temporal_trends_quantitation.xlsx` table.
-`parasEstimate.R` demonstrates how to construct a model.
-`modelAdjust.R` is applied to adjust the constructed model.
+## R codes:
+* `lmFitted.R` is divided into three parts. The first part fits the annual variation curves of application rates for per pesticide types (Insecticides, Fungicides or Herbicides) and per spraying patterns (vehicle-mounted pump or knapsack), based on the `1_pesticide_input_data_VMP_mode.xlsx` and `2_pesticide_input_data_knapsack_mode.xlsx` tables. The second part fits the trend of application rates for forbidden pesticides based on the `3_forbidden_pesticides.xlsx` table. The third part uses those fitted models constructed in the first two parts to estimate the application rates of all known pesticides from 2001 to 2022, based on the `4_pesticide_lists_for_temporal_trends_quantitation.xlsx` table.
+* `parasEstimate.R` demonstrates how to construct a model.
+* `modelAdjust.R` is applied to adjust the constructed model.

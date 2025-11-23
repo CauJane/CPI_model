@@ -10,11 +10,10 @@ if(!dir.exists(output_path)){
   dir.create(output_path)
 }
 setwd(output_path)
-file_path = "/Users/lihua/Desktop/zb-sd-pesticide/CPI_model-main/data/情景模拟/3、data_annual/"
+file_path = "/The/absolute/path/of/data_annual/"
 dir_list = dir(path = file_path, pattern = ".xlsx",full.names = F)
 
 tau = 0.5
-stop_year = 2022
 for(fname in dir_list){
   year = as.numeric(gsub("S3_pesticide_usage_|.xlsx","",fname))
   filename_full = paste(file_path,fname,sep = "")

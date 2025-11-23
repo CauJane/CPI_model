@@ -4,7 +4,7 @@ library(openxlsx)
 out_path = "../data/Scenario_Simulation/CREM_model/"
 setwd(out_path)
 para_path = "./"
-file_path = "/Users/lihua/Desktop/zb-sd-pesticide/CPI_model-main/data/情景模拟/province_pesticide_usage/"
+file_path = "/The/absolute/path/of/data_adjust/"
 dir_list = dir(path = file_path, pattern = ".xlsx",full.names = F)
 
 ## fitted model

@@ -1,4 +1,7 @@
 # CPI_model
+The dataset was developed through field surveys covering 1181 respondents and 12 crop systems and order-dependent relationship quantitation of crop-specific pesticide usage patterns, combined with multi-objective optimization to minimize provincial-level prediction errors, with official statistics serving as constraint conditions. This approach integrated crop-specific application trends, registration timelines to obtain parameter set using for spatial disaggregation to produce AI-specific input estimates at 5-arcmin resolution (2001-2022).
+
+Notably, data processing procedures were conducted by using a general- purpose numerical optimizer on a conventional multi-core workstation.
 <img width="872" height="1056" alt="图片" src="https://github.com/user-attachments/assets/bb1c6ae6-0467-47a6-8fc6-1e4b6fb9f282" />
 
 ## The original data is stored in the folder `./data/`:

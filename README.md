@@ -1,5 +1,5 @@
 # CPI_model
-<img width="904" height="1096" alt="图片" src="https://github.com/user-attachments/assets/83c4fb59-4218-46b0-a234-f04fec8b534c" />
+<img width="872" height="1056" alt="图片" src="https://github.com/user-attachments/assets/bb1c6ae6-0467-47a6-8fc6-1e4b6fb9f282" />
 
 ## The original data is stored in the folder `./data/`:
 * `1_pesticide_input_data_VMP_mode.xlsx` contains application rates of differ pesticides under the vehicle-mounted pump mode, compiled from farmer survey data.
